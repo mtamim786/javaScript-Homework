@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keypressed</title>
+</head>
+<body>
+ <main>
+    <div class="container">
+        <h1 class="fs-1">Press a key on your keyboard</h1>
+        <p class="fs-2">Key Pressed: <span id="key"></span> </p>
+    </div>
+</main>
+
+<script>
+    
+    var pressedText = document.getElementById("key");
+    document.onkeyup = function (event) {
+        pressedText.textContent = event.key;
+    }
+</script>
+    
+</body>
+</html>

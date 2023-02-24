@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+
+    <h1>Open console</h1>
+
+    <p id="script"></p>
+    <script>
+
+        // Create a function called "adder" that take three argument (x, y, z),
+        // The function should add the arguments together, and log the result to the console.
+
+
+       var x = adder (3 ,7 ,9);
+       function adder (x , y , z){
+
+        console.log(x+y+z)
+       }
+
+        // Create a function called "Multiplier" that take three argument (x, y, z),
+        // The function should Multiply the arguments together, and log the result to the console.
+        
+        var x = multiplier (3 ,7 ,9);
+       function multiplier (x , y , z){
+
+        console.log(x*y*z)
+       }
+
+         // Create a function called "VowelCheker" that take in a single argument (x),
+        // VowelChekr logs whether or not the input is a vowel.
+
+       var vowelCheker = "t"
+
+       var  vowel, i
+
+       for (i=0; i<=vowelCheker.length-1; i++){
+        vowel = vowelCheker[i]  // or s.charAt(i)
+      if (vowel=="a"|| vowel=="e" || vowel=="i" || vowel=="o" || vowel=="u" ||
+      vowel=="A"|| vowel=="E"|| vowel=="I" || vowel=="O" || vowel=="U"){
+       console.log( vowel + " => this is an vowel charecter")
+  }
+  else{
+    console.log(vowel + " => this is not an vowel charecter")
+  }
+}
+ 
+        //adderReturner
+
+        var x = adderReturner (3 ,7 ,9);
+        document.getElementById("script").innerHTML = x;
+       function adderReturner (x , y , z){
+
+       return  x+y+z;
+       }
+
+
+    //     //multiplierReturner
+          
+       var y = multiplierReturner (3 ,7 ,9);
+       document.getElementById("script").innerHTML = y;
+       function  multiplierReturner (x , y , z){
+
+       return x*y*z
+       }
+
+
+    </script>
+
+    
+</body>
+</html>
